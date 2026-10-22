@@ -1,3 +1,4 @@
+<img width="2210" height="873" alt="diagram" src="https://github.com/user-attachments/assets/8863b690-f7af-43ee-80c0-5e4d35a25117" />
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
   xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
@@ -305,3 +306,8 @@
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
+
+
+[diagram.pdf](https://github.com/user-attachments/files/33794195/diagram.pdf)
+![Uploading diagram.svg…]()
+
