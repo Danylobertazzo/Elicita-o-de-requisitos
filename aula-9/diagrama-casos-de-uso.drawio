@@ -1,0 +1,32 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="casos-de-uso" name="Casos de uso - Envio de Guias">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1140" pageHeight="660" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="sys" value="Sistema Envio de Guias" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=16;fillColor=#f8f9fb;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="230" y="30" width="650" height="600" as="geometry"/></mxCell>
+        <mxCell id="uc1" value="UC01 Cadastrar cliente" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontSize=13;" vertex="1" parent="1"><mxGeometry x="275" y="70" width="230" height="64" as="geometry"/></mxCell>
+        <mxCell id="uc2" value="UC02 Importar clientes&#xa;por planilha" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontSize=13;" vertex="1" parent="1"><mxGeometry x="275" y="160" width="230" height="64" as="geometry"/></mxCell>
+        <mxCell id="uc3" value="UC03 Revisar&#xa;documento pendente" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontSize=13;" vertex="1" parent="1"><mxGeometry x="275" y="250" width="230" height="64" as="geometry"/></mxCell>
+        <mxCell id="uc4" value="UC04 Cadastrar regra&#xa;de reconhecimento" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontSize=13;" vertex="1" parent="1"><mxGeometry x="600" y="250" width="230" height="64" as="geometry"/></mxCell>
+        <mxCell id="uc5" value="UC05 Identificar&#xa;destinatário das guias" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontSize=13;" vertex="1" parent="1"><mxGeometry x="275" y="370" width="230" height="64" as="geometry"/></mxCell>
+        <mxCell id="uc6" value="UC06 Enviar guias&#xa;do mês" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontSize=13;" vertex="1" parent="1"><mxGeometry x="600" y="445" width="230" height="64" as="geometry"/></mxCell>
+        <mxCell id="uc7" value="UC07 Consultar&#xa;envios do mês" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontSize=13;" vertex="1" parent="1"><mxGeometry x="275" y="530" width="230" height="64" as="geometry"/></mxCell>
+        <mxCell id="ger" value="Gerenciador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="95.0" y="90" width="30" height="60" as="geometry"/></mxCell>
+        <mxCell id="ope" value="Operador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="95.0" y="420" width="30" height="60" as="geometry"/></mxCell>
+        <mxCell id="smtp" value="«sistema»&#xa;&#xa;&lt;b&gt;Servidor de e-mail&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#000000;fontSize=13;" vertex="1" parent="1"><mxGeometry x="950" y="430" width="160" height="80" as="geometry"/></mxCell>
+        <mxCell id="smtpnote" value="ator secundário" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1"><mxGeometry x="950" y="510" width="160" height="24" as="geometry"/></mxCell>
+        <mxCell id="as0" style="endArrow=none;html=1;strokeColor=#000000;" edge="1" parent="1" source="ger" target="uc1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="as1" style="endArrow=none;html=1;strokeColor=#000000;" edge="1" parent="1" source="ger" target="uc2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="as2" style="endArrow=none;html=1;strokeColor=#000000;" edge="1" parent="1" source="ger" target="uc3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="as3" style="endArrow=none;html=1;strokeColor=#000000;" edge="1" parent="1" source="ope" target="uc5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="as4" style="endArrow=none;html=1;strokeColor=#000000;" edge="1" parent="1" source="ope" target="uc6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="as5" style="endArrow=none;html=1;strokeColor=#000000;" edge="1" parent="1" source="ope" target="uc7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="as6" style="endArrow=none;html=1;strokeColor=#000000;" edge="1" parent="1" source="uc6" target="smtp"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ext" value="«extend»" style="endArrow=open;dashed=1;html=1;endSize=10;strokeColor=#000000;fontSize=12;" edge="1" parent="1" source="uc4" target="uc3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="gen" style="endArrow=block;endFill=0;endSize=14;html=1;strokeColor=#000000;" edge="1" parent="1" source="ger" target="ope"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="leg" value="Generalização: todo Gerenciador também pode fazer o que o Operador faz." style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1"><mxGeometry x="230" y="634" width="600" height="20" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
